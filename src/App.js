@@ -1,31 +1,23 @@
 import React from 'react';
-import Home from './Home/Home';
-import MainNav from './Common/MainNav';
-import Login from './Home/Login';
-import Register from './Home/Register';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './pages/Home'; 
+import Reports from './pages/Reports';
+import Products from './pages/Products';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter> 
-    <div className="App">
-
-        <MainNav/>
-
-        <div className="auth-wrapper">
-          <div className="auth-inner">
-              <Switch>
-                  <Route exact path="/" component= { Home } />
-                  <Route exact path="/login" component= { Login } />
-                  <Route exact path="/register" component= { Register } />
-              </Switch> 
-          </div>
-        </div>
-
-
-      </div>
-     </BrowserRouter>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/reports' component={Reports} />
+          <Route path='/products' component={Products} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 

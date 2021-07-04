@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MainHeader(props) {
+function Reports(props) {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function MainHeader(props) {
     );
 }
 
-export default MainHeader;
+export default Reports;
