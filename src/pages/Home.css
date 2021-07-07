@@ -4,7 +4,7 @@
   height: 100%;
   width: calc(100% - 78px);
   left: 78px;
-  background: #E4E9F7;
+  background: #252836;;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2px);
   transition: all 0.5s ease;
 }
@@ -21,4 +21,37 @@
   width: calc(100% - 240px);
   left: 240px;
 
+}
+
+h1, p {
+  color: white;
+}
+
+p {
+  font-weight: 300;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: white !important;
+
+}
+
+.nav-link:hover {
+  background: none !important;
+  color: #EA7C69 !important;
+  border-color: #f9fafb00 !important;
+  border-bottom: 1px solid #EA7C69 !important;
+
+}
+
+.nav-link.active {
+  background: none !important;
+  color: #EA7C69 !important;
+  border-color: #f9fafb00 !important;
+  border-bottom: 1px solid #EA7C69 !important;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #393C49 !important;
 }

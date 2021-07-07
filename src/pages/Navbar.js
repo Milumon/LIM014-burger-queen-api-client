@@ -33,7 +33,7 @@ function Navbar(props) {
                     <i className='bx bxl-c-plus-plus'></i>
                     <div className="logo_name">Q.Burgeer</div>
                 </div> 
-                <BiMenu className="bx bx-menu" id="btn" onClick={changeStyle} onMouseHover={{ cursor: "pointer"}} />  
+                <BiMenu className="bx bx-menu" id="btn" onClick={changeStyle}  />  
                 </div>
 
 

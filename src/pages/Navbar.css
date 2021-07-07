@@ -41,8 +41,9 @@
   font-weight: 400;
 }
 .sidebar #btn{
+  padding: 8px;
   position: absolute;
-  color: #fff;
+  color: #ea7c6a;
   top: 6px;
   left: 50%;
   font-size: 22px;
@@ -52,6 +53,7 @@
   line-height: 50px;
   transform: translateX(-50%);
 }
+ 
 
 .sidebar ul li a svg {
   width: 100%;
@@ -60,6 +62,9 @@
   padding: 12px;
 }
 
+svg {
+  cursor: pointer;
+}
 .sidebar.active ul li a  svg {  
   margin-left: 0px;
   color: rgb(234, 124, 105);
@@ -69,8 +74,15 @@
 }
  
 .sidebar.active #btn{
-  left: 90%;
+  left: 86%; 
 }
+ 
+
+.sidebar #btn:hover{
+  background: white; 
+  border-radius: 12px;
+}
+
 
 .sidebar ul{
   margin-top: 20px;
@@ -88,6 +100,7 @@
 
 
 .sidebar ul li .tooltip{
+  color: white;
   position: absolute;
   left: 125px;
   top: 0;
@@ -95,7 +108,7 @@
   border-radius: 6px;
   height: 35px;
   width: 120px;
-  background: #fff;
+  background: #EA7C69;
   line-height: 35px;
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -151,10 +164,11 @@
   font-size: 22px; 
 }
 .sidebar ul li .bx-search:hover{
-  background: #fff;
-  color: #1d1b31;
+  background: #EA7C69;
+  fill: white;
 
 }
+ 
 
 .sidebar.active ul li a{  
   padding-left: 0px;
@@ -182,9 +196,8 @@
 }
  
 
-.sidebar ul li a:hover {
-  color: #11101d;
-  background: #fff;
+.sidebar ul li a:hover { 
+  background: #EA7C69;
 }
  
  
@@ -252,14 +265,15 @@
 .profile .profile_details .name{
   font-size: 15px;
   font-weight: 400;
+  max-width: 10px;
 }
 .profile .profile_details .job{
   font-size: 12px;
 }
 .profile #log_out{
-  width: 30%;
+  width: 30px;
   height: 100%;
-  padding: 13px; 
+  padding: 8px; 
   position: absolute;
   bottom:  0px;
   left: 50%;
@@ -272,8 +286,18 @@
   transition: all 0.4s ease; 
 }
 .sidebar.active .profile #log_out{
-  left: 88%;
+  width: 30px;
+  height: 100%;
+  left: 85%;
+  padding: 8px; 
+
 }
 .sidebar.active .profile #log_out{
   background: #EA7C69
 } 
+
+
+ol, ul {
+  padding-left: 0rem !important;  
+
+}

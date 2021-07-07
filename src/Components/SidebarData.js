@@ -13,13 +13,13 @@ export const SidebarData = [
       icon: <AiIcons.AiFillHome className="bx"/> 
     },
     {
-      title: 'Orders',
-      path: '/reports',
+      title: 'Notification',
+      path: '/notification',
       icon: <RiIcons.RiNotificationLine className="bx"/> 
     }, 
     {
-      title: 'Products',
-      path: '/products',
+      title: 'Configuration',
+      path: '/configuration',
       icon: <AiIcons.AiOutlineSetting  className="bx"/> 
     }/* ,
     {
