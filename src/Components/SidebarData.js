@@ -1,26 +1,26 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
+import * as RiIcons from 'react-icons/ri';
 import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io'; 
+/* import * as IoIcons from 'react-icons/io';  */
+
+
+/* import * as BoxIcons from 'react-icons/bi';  */
 
 export const SidebarData = [
     {
       title: 'Home',
-      path: '/',
-      icon: <AiIcons.AiFillHome />,
-      cName: 'nav-text'
+      path: '/Home',
+      icon: <AiIcons.AiFillHome className="bx"/> 
     },
     {
       title: 'Orders',
       path: '/reports',
-      icon: <FaIcons.FaCartPlus />,
-      cName: 'nav-text'
+      icon: <RiIcons.RiNotificationLine className="bx"/> 
     }, 
     {
       title: 'Products',
       path: '/products',
-      icon: <IoIcons.IoIosPaper />,
-      cName: 'nav-text'
+      icon: <AiIcons.AiOutlineSetting  className="bx"/> 
     }/* ,
     {
       title: 'Team',

@@ -2,9 +2,9 @@ import React from 'react';
 
 function Reports(props) {
     return (
-        <div className='reports'>
-        <h1>xdddd</h1>
-      </div>
+                <div className="home_content">
+                    <div className="text">Home Content 1</div>
+                </div>
     );
 }
 
